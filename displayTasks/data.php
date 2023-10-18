@@ -1,11 +1,13 @@
-<?php 
+<?php
 
-require_once './model/Task.php';
-
-function get_tasks(){
-    //recupere taches de la base de donnée
-
-    return [
-        new Task()
-    ];
+class Data {
+    
+    public static function get_main_page_data(){
+        return [
+            'organization_name' => 'Arcane Capital Research Group',
+            'description' => 'Exploring the mystic realms of capitalism.',
+        ];
+    }
+    
+    // ... other data retrieval methods
 }

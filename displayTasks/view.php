@@ -1,7 +1,7 @@
 <?php 
 
-function display_tasks_view(array $tasks){
+function display_main_page(){
 
-    //il faudra utiliser twig
-    echo "<h1>LISTE DES TACHES</h1>";
+    //use twig here
+
 }

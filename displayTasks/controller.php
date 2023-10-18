@@ -1,12 +1,14 @@
-<?php 
+<?php
 
-require_once './tutu/view.php';
+require_once 'view.php';
+require_once 'data.php';
 
-function display_tasks(){
-
-    $tasks = get_tasks();
-    $html = display_tasks_view($tasks);
-    echo $html;
-
+class Controller {
+    
+    public static function display_main_page(){
+        $data = Data::get_main_page_data();
+        display_main_page($data);
+    }
+    
+    // ... other controller actions
 }
-
